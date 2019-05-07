@@ -1,0 +1,105 @@
+{
+    "type": "object",
+    "properties": {
+        "meeting_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "contact_id": {
+                    "description": "Contact Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "created_at": {
+                    "description": "Created At",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Description of the meeting",
+                    "type": "string"
+                },
+                "ended_at": {
+                    "description": "Ended At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "location": {
+                    "description": "Location",
+                    "example": "Location",
+                    "type": "string"
+                },
+                "owner_user_id": {
+                    "description": "Owner User Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "parent_id": {
+                    "description": "Parent Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "parent_type": {
+                    "description": "Parent Type",
+                    "enum": [
+                        "account",
+                        "contact",
+                        "lead",
+                        "opportunity",
+                        "user"
+                    ],
+                    "example": "contact",
+                    "type": "string"
+                },
+                "result": {
+                    "description": "Result",
+                    "example": "Confirmed",
+                    "type": "string"
+                },
+                "started_at": {
+                    "description": "Started At",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Status",
+                    "enum": [
+                        "Planned",
+                        "Held",
+                        "Not Held"
+                    ],
+                    "example": "Held",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Subject",
+                    "example": "My first note",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "description": "Updated At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

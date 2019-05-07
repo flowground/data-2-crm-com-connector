@@ -1,0 +1,229 @@
+{
+    "type": "object",
+    "properties": {
+        "contact_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "account_id": {
+                    "description": "Account Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "address_city": {
+                    "description": "Address City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "address_country": {
+                    "description": "Address Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "address_state": {
+                    "description": "Address State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "address_street": {
+                    "description": "Address Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "address_zip": {
+                    "description": "Address Zip",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "alternate_address_city": {
+                    "description": "Alternative Address City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "alternate_address_country": {
+                    "description": "Alternative Address Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "alternate_address_state": {
+                    "description": "Alternative Address State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "alternate_address_street": {
+                    "description": "Alternative Address Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "alternate_address_zip": {
+                    "description": "Alternative Address Zip Code",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "created_at": {
+                    "description": "Created At",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "date_created": {
+                    "description": "Date Created",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "date_updated": {
+                    "description": "Date Updated",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "department": {
+                    "description": "Department",
+                    "example": "D2C",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Description of the contact",
+                    "type": "string"
+                },
+                "do_not_call": {
+                    "description": "Do Not Call",
+                    "type": "boolean"
+                },
+                "email": {
+                    "description": "Email",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "email_alt": {
+                    "description": "Email Alternative",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "fax": {
+                    "description": "Fax",
+                    "example": "+49 9131 85 28732",
+                    "type": "string"
+                },
+                "first_name": {
+                    "description": "First Name",
+                    "example": "Bill",
+                    "type": "string"
+                },
+                "full_name": {
+                    "description": "Full Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "last_name": {
+                    "description": "Last Name",
+                    "example": "Wall",
+                    "type": "string"
+                },
+                "lead_source": {
+                    "description": "Lead Source",
+                    "enum": [
+                        "Personal Contact",
+                        "Existing Customer",
+                        "Call",
+                        "Website",
+                        "Email",
+                        "Conference",
+                        "Trade Show",
+                        "Employee",
+                        "Campaign",
+                        "HR",
+                        "Inbound Call",
+                        "Mail",
+                        "Partner",
+                        "Word of mouth",
+                        "Self Generated",
+                        "Other"
+                    ],
+                    "example": "Partner",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "owner_id": {
+                    "description": "Owner Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "phone_home": {
+                    "description": "Phone Home",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_mobile": {
+                    "description": "Phone Mobile",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_work": {
+                    "description": "Phone Work",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "report_to_id": {
+                    "description": "Report To Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "salutation": {
+                    "description": "Salutation",
+                    "example": "Mr.",
+                    "type": "string"
+                },
+                "sync_to_outlook": {
+                    "description": "Sync To Outlook",
+                    "type": "boolean"
+                },
+                "title": {
+                    "description": "Title",
+                    "example": "Title",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Type",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "description": "Updated At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "user": {
+                    "description": "User",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "user_id": {
+                    "description": "User Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

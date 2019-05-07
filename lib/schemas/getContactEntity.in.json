@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "contact_id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

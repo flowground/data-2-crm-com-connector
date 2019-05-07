@@ -1,0 +1,170 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "address_city": {
+                    "description": "Address city",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "address_country": {
+                    "description": "Address country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "address_postal_code": {
+                    "description": "Address postal code",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "address_state": {
+                    "description": "Address state",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "address_street": {
+                    "description": "Address street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "confirm_password": {
+                    "description": "Confirm password",
+                    "example": "bv64c566b756df3",
+                    "type": "string"
+                },
+                "created_by": {
+                    "description": "Created by",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "department": {
+                    "description": "Department",
+                    "example": "Department",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Description",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "Email",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "email_other": {
+                    "description": "Email other",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "firstname": {
+                    "description": "First name",
+                    "example": "Bill",
+                    "type": "string"
+                },
+                "fullname": {
+                    "description": "Full name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "is_active": {
+                    "description": "Is active",
+                    "example": true,
+                    "type": "boolean"
+                },
+                "is_admin": {
+                    "description": "Is admin",
+                    "example": true,
+                    "type": "boolean"
+                },
+                "lastname": {
+                    "description": "Last name",
+                    "example": "Wall",
+                    "type": "string"
+                },
+                "modified_by": {
+                    "description": "Modified by",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name",
+                    "example": "Title",
+                    "type": "string"
+                },
+                "phone_home": {
+                    "description": "Phone home",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_mobile": {
+                    "description": "Phone mobile",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_other": {
+                    "description": "Phone other",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_work": {
+                    "description": "Phone work",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "position": {
+                    "description": "Position",
+                    "example": "Position",
+                    "type": "string"
+                },
+                "role": {
+                    "description": "Role",
+                    "example": "CEO",
+                    "type": "string"
+                },
+                "roleid": {
+                    "description": "Role ID",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "signature": {
+                    "description": "Signature",
+                    "example": "Signature",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Status",
+                    "example": "active",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "Title",
+                    "example": "Title",
+                    "type": "string"
+                },
+                "user_password": {
+                    "description": "User password",
+                    "example": "bv64c566b756df3",
+                    "type": "string"
+                },
+                "website": {
+                    "description": "Website",
+                    "example": "http://google.com/",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

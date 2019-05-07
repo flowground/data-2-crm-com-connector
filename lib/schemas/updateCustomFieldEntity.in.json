@@ -1,0 +1,113 @@
+{
+    "type": "object",
+    "properties": {
+        "custom_field_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "decimal_places": {
+                    "description": "Decimal Places",
+                    "example": 2,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "default_value": {
+                    "description": "Default Value",
+                    "example": "-",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Custom",
+                    "type": "string"
+                },
+                "entity": {
+                    "description": "Entity",
+                    "enum": [
+                        "account",
+                        "contact",
+                        "user",
+                        "opportunity",
+                        "task",
+                        "lead",
+                        "note",
+                        "attachment",
+                        "event",
+                        "email",
+                        "call",
+                        "meeting"
+                    ],
+                    "example": "contact",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Label",
+                    "example": "Custom",
+                    "type": "string"
+                },
+                "length": {
+                    "description": "Length",
+                    "example": 5,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "name": {
+                    "description": "Name",
+                    "example": "Custom",
+                    "type": "string"
+                },
+                "required": {
+                    "description": "Required",
+                    "type": "boolean"
+                },
+                "select": {
+                    "description": "Select Pairs for field with type \"select\"",
+                    "items": {
+                        "properties": {
+                            "label": {
+                                "description": "Label",
+                                "type": "string"
+                            },
+                            "value": {
+                                "description": "Value",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "type": {
+                    "description": "Type",
+                    "enum": [
+                        "string",
+                        "integer",
+                        "decimal",
+                        "boolean",
+                        "date",
+                        "time",
+                        "datetime",
+                        "checkbox",
+                        "radio",
+                        "select"
+                    ],
+                    "example": "Company",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

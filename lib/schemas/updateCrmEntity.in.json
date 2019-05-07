@@ -1,0 +1,58 @@
+{
+    "type": "object",
+    "properties": {
+        "crm_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "api_url": {
+                    "description": "API URL",
+                    "example": "https://crm.com/api/v2.1/",
+                    "type": "string"
+                },
+                "login": {
+                    "description": "Login",
+                    "example": "admin",
+                    "type": "string"
+                },
+                "password": {
+                    "description": "Password",
+                    "example": "bg64d4245rgd233",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Type",
+                    "enum": [
+                        "Bitrix24",
+                        "SugarCRM",
+                        "SuiteCRM",
+                        "BPMOnline",
+                        "HubSpot",
+                        "vtiger",
+                        "OroCRM",
+                        "ZohoCRM",
+                        "Insightly",
+                        "Salesforce",
+                        "Solve360CRM",
+                        "HighriseHQ",
+                        "PipelineDeals",
+                        "Pipedrive",
+                        "CapsuleCRM",
+                        "Zurmo",
+                        "MicrosoftDynamics"
+                    ],
+                    "example": "Salesforce",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        }
+    }
+}

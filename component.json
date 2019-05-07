@@ -1,0 +1,1649 @@
+{
+    "title": "Data2CRM.API",
+    "description": "<p>Make use of our in-depth documentation to get more information about the various functions of the service. Those willing to explore the mechanics of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select CRM: <span id=\"docs-select-crm\" style=\"font-weight: bold\">Loading... please wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>: <span id=\"docs-user-key\">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>: <span id=\"docs-crm-key\">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p id=\"docs-crm-access\">The CRM access details are:<br><b>URL</b>: <a id=\"docs-crm-url\" href=\"https://login.salesforce.com/\" target=\"_blank\">https://login.salesforce.com/</a><br><b>E-mail / Username</b>: <span id=\"docs-crm-username\">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>: <span id=\"docs-crm-password\">data2crmapi123</span></p>",
+    "docsUrl": "http://www.data2crm.com/api/",
+    "url": "https://api.apis.guru/v2/specs/data2crm.com/1/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "http://api.data2crm.com:80/v1",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "getAccountCollection": {
+            "main": "./lib/actions/getAccountCollection.js",
+            "title": "GET for Account",
+            "description": "Returns all accounts from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAccountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createAccountEntity": {
+            "main": "./lib/actions/createAccountEntity.js",
+            "title": "POST for Account",
+            "description": "Add account into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createAccountEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAccountCountCollection": {
+            "main": "./lib/actions/getAccountCountCollection.js",
+            "title": "COUNT for Account",
+            "description": "Count all accounts from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAccountCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAccountDescribe": {
+            "main": "./lib/actions/getAccountDescribe.js",
+            "title": "DESCRIBE for Account",
+            "description": "Returns describe for accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAccountDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteAccountEntity": {
+            "main": "./lib/actions/deleteAccountEntity.js",
+            "title": "DELETE for Account",
+            "description": "Delete account information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteAccountEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAccountEntity": {
+            "main": "./lib/actions/getAccountEntity.js",
+            "title": "GET for Account",
+            "description": "Return account information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAccountEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateAccountEntity": {
+            "main": "./lib/actions/updateAccountEntity.js",
+            "title": "PUT for Account",
+            "description": "Update account information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateAccountEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAttachmentCollection": {
+            "main": "./lib/actions/getAttachmentCollection.js",
+            "title": "GET for Attachment",
+            "description": "Returns all attachments from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAttachmentCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createAttachmentEntity": {
+            "main": "./lib/actions/createAttachmentEntity.js",
+            "title": "POST for Attachment",
+            "description": "Add attachment into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createAttachmentEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAttachmentCountCollection": {
+            "main": "./lib/actions/getAttachmentCountCollection.js",
+            "title": "COUNT for Attachment",
+            "description": "Count all attachments from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAttachmentCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAttachmentDescribe": {
+            "main": "./lib/actions/getAttachmentDescribe.js",
+            "title": "DESCRIBE for Attachment",
+            "description": "Returns describe for attachments",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAttachmentDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteAttachmentEntity": {
+            "main": "./lib/actions/deleteAttachmentEntity.js",
+            "title": "DELETE for Attachment",
+            "description": "Delete attachment information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteAttachmentEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAttachmentEntity": {
+            "main": "./lib/actions/getAttachmentEntity.js",
+            "title": "GET for Attachment",
+            "description": "Return attachment information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAttachmentEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateAttachmentEntity": {
+            "main": "./lib/actions/updateAttachmentEntity.js",
+            "title": "PUT for Attachment",
+            "description": "Update attachment information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateAttachmentEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCallCollection": {
+            "main": "./lib/actions/getCallCollection.js",
+            "title": "GET for Call",
+            "description": "Returns all calls from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCallCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createCallEntity": {
+            "main": "./lib/actions/createCallEntity.js",
+            "title": "POST for Call",
+            "description": "Add call into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createCallEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCallCountCollection": {
+            "main": "./lib/actions/getCallCountCollection.js",
+            "title": "COUNT for Call",
+            "description": "Count all calls from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCallCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCallDescribe": {
+            "main": "./lib/actions/getCallDescribe.js",
+            "title": "DESCRIBE for Call",
+            "description": "Returns describe for calls",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCallDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteCallEntity": {
+            "main": "./lib/actions/deleteCallEntity.js",
+            "title": "DELETE for Call",
+            "description": "Delete call information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteCallEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCallEntity": {
+            "main": "./lib/actions/getCallEntity.js",
+            "title": "GET for Call",
+            "description": "Return call information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCallEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateCallEntity": {
+            "main": "./lib/actions/updateCallEntity.js",
+            "title": "PUT for Call",
+            "description": "Update call information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateCallEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getContactCollection": {
+            "main": "./lib/actions/getContactCollection.js",
+            "title": "GET for Contact",
+            "description": "Returns all contacts from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getContactCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createContactEntity": {
+            "main": "./lib/actions/createContactEntity.js",
+            "title": "POST for Contact",
+            "description": "Add contact into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createContactEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getContactCountCollection": {
+            "main": "./lib/actions/getContactCountCollection.js",
+            "title": "COUNT for Contact",
+            "description": "Count all contacts from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getContactCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getContactDescribe": {
+            "main": "./lib/actions/getContactDescribe.js",
+            "title": "DESCRIBE for Contact",
+            "description": "Returns describe for contacts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getContactDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteContactEntity": {
+            "main": "./lib/actions/deleteContactEntity.js",
+            "title": "DELETE for Contact",
+            "description": "Delete contact information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteContactEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getContactEntity": {
+            "main": "./lib/actions/getContactEntity.js",
+            "title": "GET for Contact",
+            "description": "Return contact information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getContactEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateContactEntity": {
+            "main": "./lib/actions/updateContactEntity.js",
+            "title": "PUT for Contact",
+            "description": "Update contact information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateContactEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCrmCollection": {
+            "main": "./lib/actions/getCrmCollection.js",
+            "title": "GET for Crm",
+            "description": "Returns all CRMs from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCrmCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createCrmEntity": {
+            "main": "./lib/actions/createCrmEntity.js",
+            "title": "POST for Crm",
+            "description": "Add CRM into the system<br><a href=\"http://www.data2crm.com/api/faqs/need-connect-crm-data2crm-api/\" target=\"_blank\">What do I need to connect a CRM to Data2CRM.API?</a>",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createCrmEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCrmCountCollection": {
+            "main": "./lib/actions/getCrmCountCollection.js",
+            "title": "COUNT for Crm",
+            "description": "Count all CRMs from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCrmCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteCrmEntity": {
+            "main": "./lib/actions/deleteCrmEntity.js",
+            "title": "DELETE for Crm",
+            "description": "Delete CRM information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteCrmEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCrmEntity": {
+            "main": "./lib/actions/getCrmEntity.js",
+            "title": "GET for Crm",
+            "description": "Return CRM information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCrmEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateCrmEntity": {
+            "main": "./lib/actions/updateCrmEntity.js",
+            "title": "PUT for Crm",
+            "description": "Update CRM information<br><a href=\"http://www.data2crm.com/api/faqs/need-connect-crm-data2crm-api/\" target=\"_blank\">What do I need to connect a CRM to Data2CRM.API?</a>",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateCrmEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCustomFieldCollection": {
+            "main": "./lib/actions/getCustomFieldCollection.js",
+            "title": "GET for CustomField",
+            "description": "Returns all custom field from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCustomFieldCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createCustomFieldEntity": {
+            "main": "./lib/actions/createCustomFieldEntity.js",
+            "title": "POST for CustomField",
+            "description": "Add custom field into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createCustomFieldEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteCustomFieldEntity": {
+            "main": "./lib/actions/deleteCustomFieldEntity.js",
+            "title": "DELETE for CustomField",
+            "description": "Delete custom field information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteCustomFieldEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getCustomFieldEntity": {
+            "main": "./lib/actions/getCustomFieldEntity.js",
+            "title": "GET for CustomField",
+            "description": "Return custom field information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCustomFieldEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateCustomFieldEntity": {
+            "main": "./lib/actions/updateCustomFieldEntity.js",
+            "title": "PUT for CustomField",
+            "description": "Update custom field information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateCustomFieldEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEmailCollection": {
+            "main": "./lib/actions/getEmailCollection.js",
+            "title": "GET for Email",
+            "description": "Returns all emails from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEmailCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createEmailEntity": {
+            "main": "./lib/actions/createEmailEntity.js",
+            "title": "POST for Email",
+            "description": "Add email into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createEmailEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEmailCountCollection": {
+            "main": "./lib/actions/getEmailCountCollection.js",
+            "title": "COUNT for Email",
+            "description": "Count all emails from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEmailCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEmailDescribe": {
+            "main": "./lib/actions/getEmailDescribe.js",
+            "title": "DESCRIBE for Email",
+            "description": "Returns describe for emails",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEmailDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteEmailEntity": {
+            "main": "./lib/actions/deleteEmailEntity.js",
+            "title": "DELETE for Email",
+            "description": "Delete email information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteEmailEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEmailEntity": {
+            "main": "./lib/actions/getEmailEntity.js",
+            "title": "GET for Email",
+            "description": "Return email information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEmailEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateEmailEntity": {
+            "main": "./lib/actions/updateEmailEntity.js",
+            "title": "PUT for Email",
+            "description": "Update email information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateEmailEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEventCollection": {
+            "main": "./lib/actions/getEventCollection.js",
+            "title": "GET for Event",
+            "description": "Returns all events from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEventCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createEventEntity": {
+            "main": "./lib/actions/createEventEntity.js",
+            "title": "POST for Event",
+            "description": "Add event into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createEventEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEventCountCollection": {
+            "main": "./lib/actions/getEventCountCollection.js",
+            "title": "COUNT for Event",
+            "description": "Count all events from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEventCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEventDescribe": {
+            "main": "./lib/actions/getEventDescribe.js",
+            "title": "DESCRIBE for Event",
+            "description": "Returns describe for events",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEventDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteEventEntity": {
+            "main": "./lib/actions/deleteEventEntity.js",
+            "title": "DELETE for Event",
+            "description": "Delete event information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteEventEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEventEntity": {
+            "main": "./lib/actions/getEventEntity.js",
+            "title": "GET for Event",
+            "description": "Return event information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEventEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateEventEntity": {
+            "main": "./lib/actions/updateEventEntity.js",
+            "title": "PUT for Event",
+            "description": "Update event information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateEventEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getLeadCollection": {
+            "main": "./lib/actions/getLeadCollection.js",
+            "title": "GET for Lead",
+            "description": "Returns all leads from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getLeadCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createLeadEntity": {
+            "main": "./lib/actions/createLeadEntity.js",
+            "title": "POST for Lead",
+            "description": "Add lead into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createLeadEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getLeadCountCollection": {
+            "main": "./lib/actions/getLeadCountCollection.js",
+            "title": "COUNT for Lead",
+            "description": "Count all leads from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getLeadCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getLeadDescribe": {
+            "main": "./lib/actions/getLeadDescribe.js",
+            "title": "DESCRIBE for Lead",
+            "description": "Returns describe for leads",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getLeadDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteLeadEntity": {
+            "main": "./lib/actions/deleteLeadEntity.js",
+            "title": "DELETE for Lead",
+            "description": "Delete lead information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteLeadEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getLeadEntity": {
+            "main": "./lib/actions/getLeadEntity.js",
+            "title": "GET for Lead",
+            "description": "Return lead information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getLeadEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateLeadEntity": {
+            "main": "./lib/actions/updateLeadEntity.js",
+            "title": "PUT for Lead",
+            "description": "Update lead information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateLeadEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getMeetingCollection": {
+            "main": "./lib/actions/getMeetingCollection.js",
+            "title": "GET for Meeting",
+            "description": "Returns all meetings from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getMeetingCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createMeetingEntity": {
+            "main": "./lib/actions/createMeetingEntity.js",
+            "title": "POST for Meeting",
+            "description": "Add meeting into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createMeetingEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getMeetingCountCollection": {
+            "main": "./lib/actions/getMeetingCountCollection.js",
+            "title": "COUNT for Meeting",
+            "description": "Count all meetings from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getMeetingCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getMeetingDescribe": {
+            "main": "./lib/actions/getMeetingDescribe.js",
+            "title": "DESCRIBE for Meeting",
+            "description": "Returns describe for meetings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getMeetingDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteMeetingEntity": {
+            "main": "./lib/actions/deleteMeetingEntity.js",
+            "title": "DELETE for Meeting",
+            "description": "Delete meeting information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteMeetingEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getMeetingEntity": {
+            "main": "./lib/actions/getMeetingEntity.js",
+            "title": "GET for Meeting",
+            "description": "Return meeting information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getMeetingEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateMeetingEntity": {
+            "main": "./lib/actions/updateMeetingEntity.js",
+            "title": "PUT for Meeting",
+            "description": "Update meeting information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateMeetingEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNoteCollection": {
+            "main": "./lib/actions/getNoteCollection.js",
+            "title": "GET for Note",
+            "description": "Returns all notes from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNoteCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createNoteEntity": {
+            "main": "./lib/actions/createNoteEntity.js",
+            "title": "POST for Note",
+            "description": "Add note into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createNoteEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNoteCountCollection": {
+            "main": "./lib/actions/getNoteCountCollection.js",
+            "title": "COUNT for Note",
+            "description": "Count all notes from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNoteCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNoteDescribe": {
+            "main": "./lib/actions/getNoteDescribe.js",
+            "title": "DESCRIBE for Note",
+            "description": "Returns describe for notes",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNoteDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteNoteEntity": {
+            "main": "./lib/actions/deleteNoteEntity.js",
+            "title": "DELETE for Note",
+            "description": "Delete note information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteNoteEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNoteEntity": {
+            "main": "./lib/actions/getNoteEntity.js",
+            "title": "GET for Note",
+            "description": "Return note information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNoteEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateNoteEntity": {
+            "main": "./lib/actions/updateNoteEntity.js",
+            "title": "PUT for Note",
+            "description": "Update note information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateNoteEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOpportunityCollection": {
+            "main": "./lib/actions/getOpportunityCollection.js",
+            "title": "GET for Opportunity",
+            "description": "Returns all opportunities from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOpportunityCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createOpportunityEntity": {
+            "main": "./lib/actions/createOpportunityEntity.js",
+            "title": "POST for Opportunity",
+            "description": "Add opportunity into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createOpportunityEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOpportunityCountCollection": {
+            "main": "./lib/actions/getOpportunityCountCollection.js",
+            "title": "COUNT for Opportunity",
+            "description": "Count all opportunities from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOpportunityCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOpportunityDescribe": {
+            "main": "./lib/actions/getOpportunityDescribe.js",
+            "title": "DESCRIBE for Opportunity",
+            "description": "Returns describe for opportunities",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOpportunityDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOpportunityEntity": {
+            "main": "./lib/actions/deleteOpportunityEntity.js",
+            "title": "DELETE for Opportunity",
+            "description": "Delete opportunity information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOpportunityEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOpportunityEntity": {
+            "main": "./lib/actions/getOpportunityEntity.js",
+            "title": "GET for Opportunity",
+            "description": "Return opportunity information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOpportunityEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateOpportunityEntity": {
+            "main": "./lib/actions/updateOpportunityEntity.js",
+            "title": "PUT for Opportunity",
+            "description": "Update opportunity information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateOpportunityEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getTaskCollection": {
+            "main": "./lib/actions/getTaskCollection.js",
+            "title": "GET for Task",
+            "description": "Returns all tasks from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getTaskCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createTaskEntity": {
+            "main": "./lib/actions/createTaskEntity.js",
+            "title": "POST for Task",
+            "description": "Add task into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createTaskEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getTaskCountCollection": {
+            "main": "./lib/actions/getTaskCountCollection.js",
+            "title": "COUNT for Task",
+            "description": "Count all tasks from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getTaskCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getTaskDescribe": {
+            "main": "./lib/actions/getTaskDescribe.js",
+            "title": "DESCRIBE for Task",
+            "description": "Returns describe for tasks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getTaskDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteTaskEntity": {
+            "main": "./lib/actions/deleteTaskEntity.js",
+            "title": "DELETE for Task",
+            "description": "Delete task information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteTaskEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getTaskEntity": {
+            "main": "./lib/actions/getTaskEntity.js",
+            "title": "GET for Task",
+            "description": "Return task information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getTaskEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateTaskEntity": {
+            "main": "./lib/actions/updateTaskEntity.js",
+            "title": "PUT for Task",
+            "description": "Update task information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateTaskEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUserCollection": {
+            "main": "./lib/actions/getUserCollection.js",
+            "title": "GET for User",
+            "description": "Returns all users from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUserCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "createUserEntity": {
+            "main": "./lib/actions/createUserEntity.js",
+            "title": "POST for User",
+            "description": "Add user into the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/createUserEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUserCountCollection": {
+            "main": "./lib/actions/getUserCountCollection.js",
+            "title": "COUNT for User",
+            "description": "Count all users from the system",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUserCountCollection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUserDescribe": {
+            "main": "./lib/actions/getUserDescribe.js",
+            "title": "DESCRIBE for User",
+            "description": "Returns describe for users",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUserDescribe.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteUserEntity": {
+            "main": "./lib/actions/deleteUserEntity.js",
+            "title": "DELETE for User",
+            "description": "Delete user information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteUserEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUserEntity": {
+            "main": "./lib/actions/getUserEntity.js",
+            "title": "GET for User",
+            "description": "Return user information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUserEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateUserEntity": {
+            "main": "./lib/actions/updateUserEntity.js",
+            "title": "PUT for User",
+            "description": "Update user information",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateUserEntity.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

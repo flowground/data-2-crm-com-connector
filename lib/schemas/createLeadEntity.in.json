@@ -1,0 +1,341 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "account_id": {
+                    "description": "Account Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "account_name": {
+                    "description": "Account Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "alt_city": {
+                    "description": "Alternative City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "alt_country": {
+                    "description": "Alternative Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "alt_state": {
+                    "description": "Alternative State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "alt_street": {
+                    "description": "Alternative Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "alt_zip_code": {
+                    "description": "Alternative Zip Code",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "annual_revenue": {
+                    "description": "Annual Revenue",
+                    "example": 100000,
+                    "format": "float",
+                    "type": "number"
+                },
+                "assigned_user_id": {
+                    "description": "Assigned User Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "birth_date": {
+                    "description": "Annual Revenue",
+                    "example": "1982-11-28",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "campaign_id": {
+                    "description": "Campaign Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "city": {
+                    "description": "City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "company": {
+                    "description": "Company",
+                    "example": "M&M",
+                    "type": "string"
+                },
+                "contact_id": {
+                    "description": "Contact Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "country": {
+                    "description": "Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "date_created": {
+                    "description": "Date Created",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "date_updated": {
+                    "description": "Date Updated",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "department": {
+                    "description": "Department",
+                    "example": "D2C",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Description",
+                    "type": "string"
+                },
+                "do_not_call": {
+                    "description": "Do Not Call",
+                    "type": "boolean"
+                },
+                "email": {
+                    "description": "Email",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "email_home": {
+                    "description": "Email Home",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "email_other": {
+                    "description": "Email Other",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "event_id": {
+                    "description": "Event Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "fax": {
+                    "description": "Fax",
+                    "example": "+49 9131 85 28732",
+                    "type": "string"
+                },
+                "first_name": {
+                    "description": "First Name",
+                    "example": "Bill",
+                    "type": "string"
+                },
+                "industry": {
+                    "description": "Industry",
+                    "enum": [
+                        "Informational Technology",
+                        "Telecommunications",
+                        "Manufacturing",
+                        "Banking",
+                        "Consulting",
+                        "Finance",
+                        "Government",
+                        "Delivery",
+                        "Non-Profit",
+                        "Entertainment",
+                        "Biotechnology",
+                        "Chemicals",
+                        "Communications",
+                        "Construction",
+                        "Education",
+                        "Electronics",
+                        "Energy",
+                        "Engineering",
+                        "Environmental",
+                        "Health care",
+                        "Hospitality",
+                        "Machinery",
+                        "Media",
+                        "Recreation",
+                        "Retail",
+                        "Transportation",
+                        "Utilities",
+                        "Other"
+                    ],
+                    "example": "Construction",
+                    "type": "string"
+                },
+                "last_name": {
+                    "description": "Last Name",
+                    "example": "Wall",
+                    "type": "string"
+                },
+                "lead_source": {
+                    "description": "Lead Source",
+                    "enum": [
+                        "Personal Contact",
+                        "Existing Customer",
+                        "Call",
+                        "Website",
+                        "Email",
+                        "Conference",
+                        "Trade Show",
+                        "Employee",
+                        "Campaign",
+                        "HR",
+                        "Inbound Call",
+                        "Mail",
+                        "Partner",
+                        "Word of mouth",
+                        "Self Generated",
+                        "Purchased List",
+                        "Other"
+                    ],
+                    "type": "string"
+                },
+                "lead_source_description": {
+                    "description": "Lead Source Description",
+                    "example": "Website Application",
+                    "type": "string"
+                },
+                "opened": {
+                    "description": "Opened",
+                    "type": "string"
+                },
+                "opportunity_id": {
+                    "description": "Opportunity Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "owner_id": {
+                    "description": "Owner Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "pager": {
+                    "description": "Pager Number",
+                    "example": "123-12",
+                    "type": "string"
+                },
+                "phone_home": {
+                    "description": "Phone Home",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_mobile": {
+                    "description": "Phone Mobile",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_other": {
+                    "description": "Phone Other",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_work": {
+                    "description": "Phone Work",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "referred_by": {
+                    "description": "Referred By",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "salutation": {
+                    "description": "Salutation",
+                    "example": "Mr.",
+                    "type": "string"
+                },
+                "skype_id": {
+                    "description": "Skype",
+                    "example": "bill.wall",
+                    "type": "string"
+                },
+                "state": {
+                    "description": "State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Status",
+                    "enum": [
+                        "Unassigned",
+                        "Responsible Assigned",
+                        "Waiting for details",
+                        "Cannot contact",
+                        "On hold",
+                        "Restored",
+                        "In Progress",
+                        "Junk Lead",
+                        "Converted",
+                        "Attempted to contact",
+                        "Contact in Future",
+                        "Contacted",
+                        "Lost Lead",
+                        "Not Contacted",
+                        "Pre Qualified"
+                    ],
+                    "example": "Unassigned",
+                    "type": "string"
+                },
+                "status_description": {
+                    "description": "Status Description",
+                    "example": "Description",
+                    "type": "string"
+                },
+                "street": {
+                    "description": "Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "suite": {
+                    "description": "Suite",
+                    "type": "string"
+                },
+                "task_id": {
+                    "description": "Task Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "Title",
+                    "example": "Title",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Type",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "website": {
+                    "description": "Website",
+                    "example": "http://google.com/",
+                    "type": "string"
+                },
+                "zip_code": {
+                    "description": "Zip Code",
+                    "example": "47212",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "bcc": {
+                    "description": "BCC",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "Body",
+                    "example": "Body of the email",
+                    "type": "string"
+                },
+                "cc": {
+                    "description": "CC",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "created_at": {
+                    "description": "Created At",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "direction": {
+                    "description": "Direction",
+                    "enum": [
+                        "Inbound",
+                        "Outbound"
+                    ],
+                    "example": "Outbound",
+                    "type": "string"
+                },
+                "from": {
+                    "description": "From",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "owner_user_id": {
+                    "description": "Owner User Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "parent_id": {
+                    "description": "Parent Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "parent_type": {
+                    "description": "Parent Type",
+                    "enum": [
+                        "account",
+                        "opportunity",
+                        "contact",
+                        "lead",
+                        "user",
+                        "task"
+                    ],
+                    "example": "contact",
+                    "type": "string"
+                },
+                "sent_at": {
+                    "description": "Sent At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Status",
+                    "enum": [
+                        "Draft",
+                        "Pending",
+                        "Sent"
+                    ],
+                    "example": "Sent",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Subject",
+                    "example": "Subject of the email",
+                    "type": "string"
+                },
+                "to": {
+                    "description": "To",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "description": "Updated At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

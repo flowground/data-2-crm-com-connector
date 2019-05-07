@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "filter": {
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Bitrix24",
+                "SugarCRM",
+                "SuiteCRM",
+                "BPMOnline",
+                "HubSpot",
+                "vtiger",
+                "OroCRM",
+                "ZohoCRM",
+                "Insightly",
+                "Salesforce",
+                "Solve360CRM",
+                "HighriseHQ",
+                "PipelineDeals",
+                "Pipedrive",
+                "CapsuleCRM",
+                "Zurmo",
+                "MicrosoftDynamics"
+            ]
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "type": "object",
+    "properties": {
+        "opportunity_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "account_id": {
+                    "description": "Account Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "account_name": {
+                    "description": "Account Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "amount": {
+                    "description": "Amount",
+                    "example": 4235.9,
+                    "format": "float",
+                    "type": "number"
+                },
+                "assigned_user_id": {
+                    "description": "Assigned User Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "assigned_user_name": {
+                    "description": "Assigned User Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "campaign_id": {
+                    "description": "Campaign Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "campaign_name": {
+                    "description": "Campaign Name",
+                    "example": "D2C",
+                    "type": "string"
+                },
+                "contact_id": {
+                    "description": "Contact Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "currency_name": {
+                    "description": "Currency Name",
+                    "example": "US Dollar",
+                    "type": "string"
+                },
+                "currency_symbol": {
+                    "description": "Currency Symbol",
+                    "example": "USD",
+                    "type": "string"
+                },
+                "date_closed": {
+                    "description": "Date Closed",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "date_created": {
+                    "description": "Date Created",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Description",
+                    "type": "string"
+                },
+                "lead_id": {
+                    "description": "Lead Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "lead_source": {
+                    "description": "Lead Source",
+                    "example": "Web Site",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "next_step": {
+                    "description": "Next Step",
+                    "example": "Some",
+                    "type": "string"
+                },
+                "owner_id": {
+                    "description": "Owner Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "probability": {
+                    "description": "Probability",
+                    "example": 80,
+                    "format": "float",
+                    "type": "number"
+                },
+                "sales_stage": {
+                    "description": "Sales Stage",
+                    "enum": [
+                        "New",
+                        "Open",
+                        "Details",
+                        "Proposal",
+                        "Negotiation",
+                        "Abandoned",
+                        "Suspended",
+                        "Won",
+                        "On hold",
+                        "Lost",
+                        "Prospecting",
+                        "Qualification",
+                        "Needs Analysis",
+                        "Value Proposition",
+                        "Decision Makers",
+                        "Perception Analysis",
+                        "Closed Lost to competition",
+                        "Other"
+                    ],
+                    "example": "Negotiation",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Type",
+                    "example": "Sales",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}

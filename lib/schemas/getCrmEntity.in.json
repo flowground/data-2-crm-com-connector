@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "crm_id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        }
+    }
+}

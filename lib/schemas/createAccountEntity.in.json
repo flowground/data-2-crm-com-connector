@@ -1,0 +1,239 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "account_category": {
+                    "description": "Category",
+                    "example": "General",
+                    "type": "string"
+                },
+                "address_type": {
+                    "description": "Address Type",
+                    "example": "Billing",
+                    "type": "string"
+                },
+                "annual_revenue": {
+                    "description": "Annual Revenue",
+                    "example": 23244.43222,
+                    "format": "float",
+                    "type": "number"
+                },
+                "billing_city": {
+                    "description": "Billing City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "billing_country": {
+                    "description": "Billing Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "billing_state": {
+                    "description": "Billing State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "billing_street": {
+                    "description": "Billing Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "billing_zip": {
+                    "description": "Billing Zip",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "created_at": {
+                    "description": "Created At",
+                    "example": "2015-01-01T05:18:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description",
+                    "example": "Some long description",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "Email",
+                    "example": "bill.wall@mail.com",
+                    "type": "string"
+                },
+                "email_alt": {
+                    "description": "Email Alternative",
+                    "example": "bill.wall.alt@mail.com",
+                    "type": "string"
+                },
+                "employees": {
+                    "description": "Employees",
+                    "example": 230,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "facebook": {
+                    "description": "Facebook",
+                    "example": "http://www.facebook.com/your_page",
+                    "type": "string"
+                },
+                "fax": {
+                    "description": "Fax",
+                    "example": "+49 9131 85 28732",
+                    "type": "string"
+                },
+                "industry": {
+                    "description": "Industry",
+                    "enum": [
+                        "Informational Technology",
+                        "Telecommunications",
+                        "Manufacturing",
+                        "Banking",
+                        "Consulting",
+                        "Finance",
+                        "Government",
+                        "Delivery",
+                        "Non-Profit",
+                        "Entertainment",
+                        "Biotechnology",
+                        "Chemicals",
+                        "Communications",
+                        "Construction",
+                        "Education",
+                        "Electronics",
+                        "Energy",
+                        "Engineering",
+                        "Environmental",
+                        "Health care",
+                        "Hospitality",
+                        "Machinery",
+                        "Media",
+                        "Recreation",
+                        "Retail",
+                        "Transportation",
+                        "Utilities",
+                        "Other"
+                    ],
+                    "example": "Electronics",
+                    "type": "string"
+                },
+                "livejournal": {
+                    "description": "Livejournal",
+                    "example": "http://your_page.livejournal.com/",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name",
+                    "example": "Bill Wall",
+                    "type": "string"
+                },
+                "owner": {
+                    "description": "Owner",
+                    "example": "Nicky McCartney",
+                    "type": "string"
+                },
+                "owner_id": {
+                    "description": "Owner Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "ownership": {
+                    "description": "Ownership",
+                    "example": "Public",
+                    "type": "string"
+                },
+                "parent_id": {
+                    "description": "Parent Identifier",
+                    "example": "21312411",
+                    "type": "string"
+                },
+                "phone": {
+                    "description": "Phone",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "phone_alt": {
+                    "description": "Phone Alternative",
+                    "example": "(817) 569-8900",
+                    "type": "string"
+                },
+                "rating": {
+                    "description": "Rating",
+                    "example": "Active",
+                    "type": "string"
+                },
+                "shipping_city": {
+                    "description": "Shipping City",
+                    "example": "Brandenburg",
+                    "type": "string"
+                },
+                "shipping_country": {
+                    "description": "Shipping Country",
+                    "example": "USA",
+                    "type": "string"
+                },
+                "shipping_state": {
+                    "description": "Shipping State",
+                    "example": "NY",
+                    "type": "string"
+                },
+                "shipping_street": {
+                    "description": "Shipping Street",
+                    "example": "P.O. Box 300, 2698 Ultricies Road",
+                    "type": "string"
+                },
+                "shipping_zip": {
+                    "description": "Shipping Zip Code",
+                    "example": "47212",
+                    "type": "string"
+                },
+                "sic_code": {
+                    "description": "SIC Code",
+                    "example": "2895-1",
+                    "type": "string"
+                },
+                "tickersymbol": {
+                    "description": "Ticker Symbol",
+                    "example": "%",
+                    "type": "string"
+                },
+                "twitter": {
+                    "description": "Twitter",
+                    "example": "http://twitter.com/your_page",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Type",
+                    "example": "Company",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "description": "Updated At",
+                    "example": "2015-02-10T17:12:23-0700",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "website": {
+                    "description": "Website",
+                    "example": "http://google.com/",
+                    "type": "string"
+                },
+                "website_alt": {
+                    "description": "Website Alternative",
+                    "example": "http://google.com/",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_API2CRM_USERKEY": {
+            "required": true,
+            "type": "string",
+            "default": "e2a6379ab878ae7e58119d4ec842bf9c926e05b5"
+        },
+        "X_API2CRM_CRMKEY": {
+            "required": true,
+            "type": "string",
+            "default": "7ae5b17008fb414d84981191cf3b66a476ef8bef"
+        }
+    }
+}
